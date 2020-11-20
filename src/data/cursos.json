@@ -1,0 +1,68 @@
+{
+  "cursos": [
+    {
+      "id": "ed-001",
+      "name": "Android Bases de datos",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/719bb708-2e52-42fd-89f7-0eae353142fd.png",
+      "description": "Aplica las diferentes practicas para guardar datos en tu aplicación movil.",
+      "price": "58",
+      "available": "true"
+    },
+    {
+      "id": "ed-002",
+      "name": "Android Material Design",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/09e1677e-8651-4f51-9a51-eec1b4ff788d.png",
+      "description": "Conoce como implementar Material Design en tus proyectos con android.",
+      "price": "44",
+      "available": "true"
+    },
+    {
+      "id": "ed-003",
+      "name": "Arduino desde cero (30 de nov.)",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/1bada4e8-4bab-4be8-8f2e-83e285515187.png",
+      "description": "Aprende a usar la plataforma de desarrollo de hardware libre más usada de los sistemas embebidos y automatiza tus proyectos electrónicos.",
+      "price": "130",
+      "available": "true"
+    },
+    {
+      "id": "ed-004",
+      "name": "La ruta del desarrollador web",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/e7fbb7f9-773c-426a-bbb5-14276a37af33.png",
+      "description": "Aprende todos los roles y rutas que existen para ser un desarrollador web profesional en 2021.",
+      "price": "0",
+      "available": false
+    },
+    {
+      "id": "ed-005",
+      "name": "Docker desde cero",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/e41bbf77-d458-48d9-814b-7dd62a214e40.png",
+      "description": "Ingresa al mundo de los contenedores con la tecnología lider que utilizan las grandes empresas.",
+      "price": "72",
+      "available": "true"
+    },
+    {
+      "id": "ed-007",
+      "name": "Gramática del inglés",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/b1158d37-35f6-49ec-a151-e5594ccea21d.jpg",
+      "description": "Aprende tiempos gramaticales más avanzados y ejercita tus habilidades de conversación.",
+      "price": "101",
+      "available": "true"
+    },
+    {
+      "id": "ed-008",
+      "name": "Testing con GO",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/a9913502-8af2-400b-8095-7b78f52200dc.png",
+      "description": "Aprende a crear tests y medir la eficiencia de tus proyectos con Go",
+      "price": "87",
+      "available": "true"
+    },
+    {
+      "id": "ed-011",
+      "name": "Tu primera app con C#",
+      "poster": "https://edteam-media.s3.amazonaws.com/courses/medium/aba6cde6-3f99-416d-8e5a-6e01380d6feb.jpg",
+      "description": "En este taller aplicarás la teoría de los cursos de C# desde cero y POO en una aplicación de consola.",
+      "price": "101",
+      "available": "true"
+    }
+  ]
+}

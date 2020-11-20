@@ -1,0 +1,305 @@
+*, *:before, *:after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: #fafafa;
+}
+.navbar {
+    background-color: var(--color-bg-secondary);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 50px;
+}
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.home-link img{
+    height: 32px;
+    margin: 0.67em 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4rem;
+}
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (max-width: 750px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 600px) {    
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+}
+.card {
+    background-color: var(--color-bg-secondary);
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.card img {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+.img-fluid {
+    width: 100%;
+}
+.card-content, .card-actions {
+    margin: 1rem auto;
+    width: 80%;
+}
+.curso-name{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+.curso-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: calc(3*1.6);
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+.curso-available{
+    background-color: #eafbf2;
+    color: #2dd280;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.curso-price{
+    font-family: 'Open Sans', sans-serif;
+    color: #1992ee;
+    font-weight: bold;
+}
+.card-actions{
+    display: flex;
+}
+.btn{
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.btn-primary,
+.edit{
+    background-color: #007BDF;
+}
+.delete{
+    margin-left: 5px;
+    background-color: #cb3234;
+}
+.button-add{
+    background-color:  #007BDF;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    margin: 0 1em 1em 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/*Footer*/
+footer{
+    margin-top: 15px;
+    padding: 1em;
+    color: #bbb;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/*Formulario*/
+.body-overflow{
+    overflow: hidden;
+}
+.form-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: .625em;
+}
+.form-content{
+    background-color: #fff;
+    border-radius: 5px;
+    min-width: 400px;
+    margin: auto;
+    outline: none;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+}
+.form-header{
+    padding: 1.25em;
+}
+.form-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #263238;
+}
+.form-close{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    background-color: transparent;
+    color: #bbb;
+    transition: all .3s ease;
+    &:hover {
+        color: #263238;
+    }
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em 1.5em;
+}
+.input-row{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 45px;
+    .input-div{
+        margin-bottom: 0;
+    }
+    div:last-child{
+        margin-left: 10px;
+    }
+}
+.input-available{
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px solid #BBB;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    
+    input[type="checkbox"] {
+        margin-right: 5px;
+        width: 17px;
+        height: 17px;
+    }
+}
+.input-div {
+    margin-bottom: 45px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    border-bottom: 2px solid #BBB;
+    color: #BBB;
+    font-family: 'Open Sans', sans-serif;
+    &.input-error {
+        border-bottom: 2px solid #cb3234;
+    }
+    i {
+        font-size: 20px;
+        padding-right: 5px;
+        &.icon-close {
+            font-size: 16px;
+        }
+    }
+
+    input {
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 10px 10px 5px;
+        &:focus {
+            outline: none;
+        }
+        &:read-only ~ label,
+        &:focus ~ label,
+        &:valid ~ label{
+            top: -15px;
+            font-size: 14px;
+            color:rgb(117, 117, 117);
+        }
+    }
+
+    label {
+        color: rgb(117, 117, 117);
+        font-size: 16px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+
+        &.label-error {
+            color: #cb3234;
+        }
+    }
+}
+
+.input-feedback {
+    color: #cb3234;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    top: 100%;
+}
+.btn-primary{
+    font-size: 16px;
+}
+
+/*Sweet Alert 2*/
+.swal2-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+}
+.swal2-content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+.swal2-actions button{
+    font-family: 'Raleway', sans-serif;
+}
